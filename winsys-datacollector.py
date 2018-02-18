@@ -95,6 +95,10 @@ if __name__ == "__main__":
     if "-h" in sys.argv or "-help" in sys.argv:
         print("-h -help : to display help text")
         print("-lrp : to list running processes")
+        print("-lt <pid> : list all threads or threads of a specfic pid")
+        print("-lm : list all loaded modules")
+        print("-la <moduleName> : show address of executatble memory for all or one module")
+        print("-gd <moduleName> : show hex data in memory for a module") 
     elif "-lrp" in sys.argv:    # problem 1 list running processes
         listRunningProcs()
     elif "-lt" in sys.argv:     # problem 2 list threads
